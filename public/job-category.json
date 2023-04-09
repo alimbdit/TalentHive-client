@@ -1,0 +1,22 @@
+[
+    {
+        "logo": "https://example.com/category1-logo.png",
+        "name": "Software Engineering",
+        "jobCount": 250
+    },
+    {
+        "logo": "https://example.com/category2-logo.png",
+        "name": "Marketing and Advertising",
+        "jobCount": 150
+    },
+    {
+        "logo": "https://example.com/category3-logo.png",
+        "name": "Data Analysis and Science",
+        "jobCount": 200
+    },
+    {
+        "logo": "https://example.com/category4-logo.png",
+        "name": "Healthcare and Medicine",
+        "jobCount": 100
+    }
+]

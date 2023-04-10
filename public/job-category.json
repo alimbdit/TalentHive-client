@@ -1,22 +1,26 @@
 [
     {
+        "_id":"001",
         "logo": "https://i.ibb.co/y5MVm3C/accounts-1.png",
-        "name": "Data Analysis and Science",
-        "jobCount": 200
+        "name": "Account & Finance",
+        "jobCount": "200"
     },
     {
+        "_id":"002",
         "logo": "https://i.ibb.co/WVR8wxc/business-1.png",
-        "name": "Marketing and Advertising",
-        "jobCount": 150
+        "name": "Marketing & Advertising",
+        "jobCount": "150"
     },
     {
+        "_id":"003",
         "logo": "https://i.ibb.co/MpvGg2W/social-media-1.png",
-        "name": "Healthcare and Medicine",
-        "jobCount": 100
+        "name": "Healthcare & Medicine",
+        "jobCount": "100+"
     },
     {
+        "_id":"004",
         "logo": "https://i.ibb.co/GRdGbpG/chip-1.png",
         "name": "Software Engineering",
-        "jobCount": 250
+        "jobCount": "250"
     }
 ]

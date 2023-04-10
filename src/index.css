@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope'), url(./assets/Manrope-VariableFont_wght.ttf) format('truetype');
+}
+
+.text-title{
+  @apply text-[#1A1919] 
+}
+.title{
+  @apply text-4xl lg:text-5xl font-bold lg:font-extrabold text-center text-title py-4
+}
+
+
+.text-gray{
+  @apply text-[#474747]
+}
+
+.my-container{
+ @apply px-4 py-5 lg:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 
+}
+
 
 .active{
     @apply font-bold tracking-wide text-transparent bg-clip-text transition-colors duration-200 bg-gradient-to-r from-neutral to-accent hover:text-primary

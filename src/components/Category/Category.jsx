@@ -2,7 +2,7 @@ import React from "react";
 
 const Category = ({ category }) => {
   const { name, logo, jobCount } = category;
-  console.log(category._id);
+  
   return (
     <div className="bg-accent bg-opacity-5 p-10 rounded-lg">
         <img className="p-4 rounded-lg bg-accent bg-opacity-10" src={logo} alt="Category Logo" />

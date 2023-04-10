@@ -11,7 +11,7 @@
   @apply text-[#1A1919] 
 }
 .title{
-  @apply text-4xl lg:text-5xl font-bold lg:font-extrabold text-center text-title py-4
+  @apply text-4xl lg:text-5xl font-extrabold lg:font-extrabold text-center text-title py-4
 }
 
 
@@ -37,10 +37,10 @@
   }
 
 .btn-primary {
-    @apply   transition duration-200  shadow-md  m-1  px-5 py-3 md:px-7 md:py-4  text-xl font-bold tracking-wide rounded-lg border-transparent   text-white hover:bg-gradient-to-l bg-gradient-to-r from-neutral to-accent 
+    @apply   transition duration-200  shadow-md  m-1  px-5 py-3 md:px-7 md:py-4  text-xl font-extrabold tracking-wide rounded-lg border-transparent   text-white hover:bg-gradient-to-l bg-gradient-to-r from-neutral to-accent 
 }
 .btn-secondary {
-    @apply   transition duration-200  shadow-md  m-1  px-4 py-2 md:px-5 md:py-3  text-xl font-bold tracking-wide rounded-md border-transparent   text-white hover:bg-gradient-to-l bg-gradient-to-r from-neutral to-accent 
+    @apply   transition duration-200  shadow-md  m-1  px-4 py-2 md:px-5 md:py-3  text-xl font-extrabold tracking-wide rounded-md border-transparent   text-white hover:bg-gradient-to-l bg-gradient-to-r from-neutral to-accent 
 }
 .btn-outline {
     @apply   transition duration-200  shadow-md    px-4 py-2 md:px-5 md:py-2 m-1 text-base tracking-wide font-extrabold rounded-md border-2 border-accent hover:border-neutral   text-transparent bg-clip-text hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l bg-gradient-to-r from-neutral to-accent 

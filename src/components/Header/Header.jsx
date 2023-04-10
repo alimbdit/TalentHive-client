@@ -23,7 +23,7 @@ const Header = () => {
             TalentHive
           </span>
         </Link>
-        <ul className="items-center hidden space-x-8 lg:flex">
+        <ul className="items-center hidden space-x-8 lg:flex ">
           <li>
             <NavLink
               to="/"

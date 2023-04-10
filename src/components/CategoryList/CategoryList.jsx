@@ -11,7 +11,7 @@ const CategoryList = () => {
     },[])
 
 
-    console.log(categories)
+    
 
   return (
     <div className="my-container">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './App.css'
 import Header from './components/Header/Header';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,10 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <h1>this is home</h1>
-      <button className='btn-primary'>apply now</button>
-      <button className='btn-secondary'>view Detais</button>
-      <button className='btn-outline'>outline</button>
+      <Outlet></Outlet>
     </div>
   )
 }

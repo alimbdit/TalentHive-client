@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="bg-accent bg-opacity-5">
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-      <div className="relative flex items-center justify-between">
+      <nav className="relative flex items-center justify-between">
         <Link
           to="/"
           aria-label="TalentHive"
@@ -66,6 +66,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
+        <button className="btn-primary hidden lg:flex">Start Applying</button>
         <div className="lg:hidden">
           <button
             aria-label="Open Menu"
@@ -158,12 +159,15 @@ const Header = () => {
                       </Link>
                     </li>
                   </ul>
+                  <div className="-ml-2 mt-3">
+                  <button className="btn-secondary">Start Applying</button>
+                  </div>
                 </nav>
               </div>
             </div>
           )}
         </div>
-      </div>
+      </nav>
     </div>
     </div>
 

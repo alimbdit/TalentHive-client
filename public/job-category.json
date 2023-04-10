@@ -1,22 +1,22 @@
 [
     {
-        "logo": "https://example.com/category1-logo.png",
-        "name": "Software Engineering",
-        "jobCount": 250
-    },
-    {
-        "logo": "https://example.com/category2-logo.png",
-        "name": "Marketing and Advertising",
-        "jobCount": 150
-    },
-    {
-        "logo": "https://example.com/category3-logo.png",
+        "logo": "https://i.ibb.co/y5MVm3C/accounts-1.png",
         "name": "Data Analysis and Science",
         "jobCount": 200
     },
     {
-        "logo": "https://example.com/category4-logo.png",
+        "logo": "https://i.ibb.co/WVR8wxc/business-1.png",
+        "name": "Marketing and Advertising",
+        "jobCount": 150
+    },
+    {
+        "logo": "https://i.ibb.co/MpvGg2W/social-media-1.png",
         "name": "Healthcare and Medicine",
         "jobCount": 100
+    },
+    {
+        "logo": "https://i.ibb.co/GRdGbpG/chip-1.png",
+        "name": "Software Engineering",
+        "jobCount": 250
     }
 ]

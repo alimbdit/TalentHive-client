@@ -1,0 +1,212 @@
+[
+    {
+        "id": "64333ef363ecb963daa11e8c1",
+        "logo": "https://i.ibb.co/kSK4YnW/google.png",
+        "title": "Technical Database Engineer",
+        "company": "Google LLC",
+        "jobType": "Onsite",
+        "location": "Dhaka, Bangladesh",
+        "address": "1205, Tejgaon Industrial Area, Dhaka, Bangladesh",
+        "schedule": "Full Time",
+        "salary": "90K - 120K",
+        "description": "We are looking for a talented Technical Database Engineer to join our growing team!",
+        "responsibility": "You will be responsible for designing, implementing, and maintaining a company's data management systems. You will also be responsible for developing backup and recovery procedures to ensure data integrity and availability, as well as improving database performance and scalability.",
+        "education": "Bachelor's degree in Computer Science or related field",
+        "experience": "3+ years",
+        "contact": {
+            "phone": "+1 (918) 553-3908",
+            "email": "jobs@gmail.com"
+        }
+    },
+    {
+        "id": "64333ef3be231092826ea7b72",
+        "logo": "https://i.ibb.co/74k05Hg/netflix.png",
+        "title": "Senior Product Designer",
+        "company": "Netflix",
+        "jobType": "Onsite",
+        "location": "Chittagong, Bangladesh",
+        "address": "433, Strand Road, Chittagong, Bangladesh",
+        "schedule": "Part Time",
+        "salary": "120K - 150K",
+        "description": "We are seeking a Senior Product Designer with a strong portfolio of work, expertise in UX design and visual design, and experience leading design teams.",
+        "responsibility": "Lead the design of new product features and improvements, collaborate with cross-functional teams, and mentor junior designers.",
+        "education": "Bachelor's or Master's degree in design or related field",
+        "experience": "5+ years",
+        "contact": {
+            "phone": "+1 (854) 447-2364",
+            "email": "tingles@netflix.com"
+        }
+    },
+    {
+        "id": "64333ef37613ce10ab2676ea3",
+        "logo": "https://i.ibb.co/r0n41Vd/tesla.png",
+        "title": "Data Analyst",
+        "company": "Tesla",
+        "jobType": "Remote",
+        "location": "Sylhet, Bangladesh",
+        "address": "Zindabazar, Sylhet, Bangladesh",
+        "schedule": "Part Time",
+        "salary": "80K - 100K",
+        "description": "We are looking for a skilled data analyst to help us analyze our business data.",
+        "responsibility": "You will be responsible for collecting, cleaning, and analyzing data from various sources to help us make data-driven decisions.",
+        "education": "Bachelor's degree in Statistics, Mathematics, or related field",
+        "experience": "2+ years",
+        "contact": {
+            "phone": "+1 (837) 599-3310",
+            "email": "data-analyst@tesla.com"
+        }
+    },
+    {
+        "id": "64333ef3feea56d2435c711e4",
+        "logo": "https://i.ibb.co/KbnzLZW/airbnb.png",
+        "title": "Motion Graphic Designer",
+        "company": "Airbnb LLC",
+        "jobType": "Remote",
+        "location": "Khulna, Bangladesh",
+        "address": "Sher-E-Bangla Road, Khulna, Bangladesh",
+        "schedule": "Full Time",
+        "salary": "80K - 100K",
+        "description": "We are seeking a talented and creative Motion Graphic Designer to join our team. The successful candidate will be responsible for creating and designing compelling visual content for a variety of media platforms.",
+        "responsibility": "Create and design engaging motion graphics for video deliverables. Work with creative team to develop concepts and create storyboards.  Design and create engaging visual content for social media platforms. Manage projects from start to finish, including concept development, story boarding, animation, and final delivery. Collaborate with internal teams to ensure projects are delivered on time and to client specifications.",
+        "education": "Bachelor's degree in Graphic Design, Animation, or related field.",
+        "experience": "3+ years of experience in motion graphics, animation, or related field.",
+        "contact": {
+            "phone": "+1 (922) 454-2145",
+            "email": "hiring@airbnb.com"
+        }
+    },
+    {
+        "id": "64333ef3ea5ee5d2f7e6686a5",
+        "logo": "https://i.ibb.co/hgwD8CW/acmeInc.png",
+        "title": "Senior Software Engineer",
+        "company": "Acme Inc.",
+        "jobType": "Onsite",
+        "location": "Rajshahi, Bangladesh",
+        "address": "Laxmipur, Rajshahi, Bangladesh",
+        "schedule": "Full Time",
+        "salary": "120K - 140K",
+        "description": "Acme Inc. is seeking an experienced Senior Software Engineer to join our team.",
+        "responsibility": "Responsibilities include leading development projects, mentoring junior engineers, and working with product managers to deliver high-quality software products.",
+        "education": "Bachelor's degree in Computer Science or related field",
+        "experience": "5+ years of professional software development experience",
+        "contact": {
+            "phone": "+1 (900) 502-2119",
+            "email": "careers@acme.com"
+        }
+    },
+    {
+        "id": "64333ef3d133e5814266d6386",
+        "logo": "https://i.ibb.co/7rDNFVS/globex-Corp.png",
+        "title": "Marketing Manager",
+        "company": "Globex Corp.",
+        "jobType": "Remote",
+        "location": "Barisal, Bangladesh",
+        "address": "Chandrima Uddan Road, Barisal, Bangladesh",
+        "schedule": "Full Time",
+        "salary": "30 - 50 per hour",
+        "description": "Globex Corp. is seeking an experienced Marketing Manager to join our team.",
+        "responsibility": "Responsibilities include creating and implementing marketing campaigns, analyzing data to measure campaign success, and collaborating with cross-functional teams.",
+        "education": "Bachelor's degree in Marketing or related field",
+        "experience": "3+ years of professional marketing experience",
+        "contact": {
+            "phone": "+1 (858) 543-3225",
+            "email": "recruitment@globex.com"
+        }
+    },
+    {
+        "id": "64333ef34717e1950405209d7",
+        "logo": "https://i.ibb.co/ckjvMF7/inovate-Co.png",
+        "title": "UI/UX Designer",
+        "company": "Innovate Co.",
+        "jobType": "Onsite",
+        "location": "Mymensingh, Bangladesh",
+        "address": "Baghmara, Mymensingh, Bangladesh",
+        "schedule": "Part Time",
+        "salary": "60K - 80K",
+        "description": "Innovate Co. is seeking a talented UI/UX Designer to join our team.",
+        "responsibility": "Responsibilities include designing user interfaces and user experiences for web and mobile applications, collaborating with development teams, and staying up To-date with industry trends.",
+        "education": "Bachelor's degree in Design or related field",
+        "experience": "2+ years of professional UI/UX design experience",
+        "contact": {
+            "phone": "+1 (964) 511-3490",
+            "email": "employment@innovateco.com"
+        }
+    }, 
+    {
+        "id": "64333ef36158b3d8427aa1678",
+        "logo": "https://i.ibb.co/VJVjjSf/DEFEnterprise.png",
+        "title": "Marketing Analyst",
+        "company": "DEF Enterprises",
+        "jobType": "Onsite",
+        "location": "Rangpur, Bangladesh",
+        "address": "Station Road, Rangpur, Bangladesh",
+        "schedule": "Full Time",
+        "salary": "25 - 40 per hour",
+        "description": "We are seeking a Marketing Analyst to help us improve our marketing campaigns and strategies. The ideal candidate will have experience analyzing marketing data, conducting market research, and developing marketing plans.",
+        "responsibility": "Conducting market research, analyzing marketing data, developing marketing plans, tracking marketing campaign performance, collaborating with the marketing team.",
+        "education": "Bachelor's degree in Marketing, Business Administration, or related field.",
+        "experience": "3+ years of experience in marketing analysis or related field.",
+        "contact": {
+            "phone": "+1 (987) 528-3480",
+            "email": "opportunities@defent.com"
+        }
+    },
+    {
+        "id": "64333ef3072773395bdab5479",
+        "logo": "https://i.ibb.co/KFNnccM/designco.png",
+        "title": "Software Engineer (Backend)",
+        "company": "Design Co.",
+        "jobType": "Remote",
+        "location": "Comilla, Bangladesh",
+        "address": "Comilla Cantonment, Comilla, Bangladesh",
+        "schedule": "Part Time",
+        "salary": "40 - 50 per hour",
+        "description": "We're looking for a backend software engineer to join our team and help us build scalable and reliable services. You'll be responsible for designing, building, and maintaining APIs and microservices.",
+        "responsibility": "Design, develop, and maintain backend APIs and microservices. Work closely with front-end engineers, product managers, and designers to create a seamless user experience. Write clean and maintainable code, and ensure the quality of your work through testing and code reviews. Optimize services for performance, scalability, and reliability. Participate in architecture and design discussions, and provide input on technical decisions.",
+        "education": "Bachelor's degree in Computer Science, Software Engineering, or a related field.",
+        "experience": "2-4 years",
+        "contact": {
+            "phone": "+1 (883) 484-3390",
+            "email": "contactwith@designco.com"
+        }
+    },
+    {
+        "id": "64333ef3e86cef930b715bb10",
+        "logo": "https://i.ibb.co/dtsCrYF/Pixelated.png",
+        "title": "Graphic Designer",
+        "company": "Pixelated",
+        "jobType": "Remote",
+        "location": "Jessore, Bangladesh",
+        "address": "Jessore Airport Road, Jessore, Bangladesh",
+        "schedule": "Part Time",
+        "salary": "40 - 50 per hour",
+        "description": "We are looking for a creative and talented Graphic Designer to join our team on a part-time basis.",
+        "responsibility": "Responsibilities include designing marketing materials, creating website mockups, and producing high-quality graphics for our clients.",
+        "education": "Bachelor's or Master's degree in Graphic Design or related field",
+        "experience": "3+ years",
+        "contact": {
+            "phone": "+1 (864) 505-2261",
+            "email": "work@pixelated.com"
+        }
+    },
+    {
+        "id": "64333f87587cc51e7f591bd11",
+        "logo": "https://i.ibb.co/cx9xjnb/techinnovators.png",
+        "title": "Mobile App Developer",
+        "company": "Tech Innovators",
+        "jobType": "Remote",
+        "location": "Cox's Bazar",
+        "address": "Hotel Seagull, Kalatoli Road, Cox's Bazar, Bangladesh",
+        "schedule": "Full Time",
+        "salary": "90K - 110K",
+        "description": "We are looking for a talented Mobile App Developer to join our team and help create engaging and interactive experiences for our users.",
+        "responsibility": "Develop and maintain mobile applications for iOS and Android platforms, collaborate with cross-functional teams to define, design, and ship new features, write clean, efficient, and well-documented code, continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+        "education": "Bachelor's degree in Computer Science or related field.",
+        "experience": "5+ years",
+        "contact": {
+            "phone": "+1 (922) 421-2121",
+            "email": "apply@innovators.com"
+        }
+    }
+]
+

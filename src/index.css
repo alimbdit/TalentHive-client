@@ -4,6 +4,12 @@
 
 
 .btn-primary {
-    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-full border-transparent border-2  text-gray-700 hover:bg-cyan-400 bg-cyan-200
+    @apply   transition duration-200  shadow-md  md:mb-0  px-5 py-3 md:px-7 md:py-4 m-2 text-xl font-bold tracking-wide rounded-lg border-transparent   text-white hover:bg-gradient-to-l bg-gradient-to-r from-[#7E90FE] to-[#9873FF]
+}
+.btn-secondary {
+    @apply   transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-5 md:py-3 m-2 text-xl font-bold tracking-wide rounded-md border-transparent   text-white hover:bg-gradient-to-l bg-gradient-to-r from-[#7E90FE] to-[#9873FF]
+}
+.btn-outline {
+    @apply   transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-5 md:py-2 m-2 text-base tracking-wide font-extrabold rounded-md border-2 border-[#9873FF] hover:border-[#7E90FE]   text-transparent bg-clip-text hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l bg-gradient-to-r from-[#7E90FE] to-[#9873FF] 
 }
 

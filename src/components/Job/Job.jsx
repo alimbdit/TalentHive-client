@@ -1,10 +1,15 @@
-import React from "react";
-import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
+import React, { useContext } from "react";
+import { JobContext } from "../../App";
+import { Link } from "react-router-dom";
+
 
 const Job = ({ job }) => {
-  console.log(job);
+  // console.log(job);
 
-  const { logo, title, company, jobType, location, schedule, salary } = job;
+  const {id, logo, title, company, jobType, location, schedule, salary } = job;
+
+  //  const {handleViewDetails} = useContext(JobContext);
+  
 
   return (
     <div className="rounded-lg border-[#E8E8E8] border shadow p-10">
@@ -62,7 +67,7 @@ const Job = ({ job }) => {
           
         </span>
       </div>
-      <button className="btn-secondary ">View Details</button>
+      <Link to={`/details/${job.id}`} className="btn-secondary ">View Details</Link>
     </div>
   );
 };

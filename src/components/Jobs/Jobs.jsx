@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Job from "../Job/Job";
+import { JobContext } from "../../App";
 
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
-  const [seeAll, setSeeAll] = useState(false)
+  const [seeAll, setSeeAll] = useState(false);
+  const {AllJobs} = useContext(JobContext );
+  const jobsAvailable = (AllJobs || []);
+  // console.log(jobs)
+
 
   useEffect(() => {
-    fetch("jobdata.json")
-      .then((res) => res.json())
-      .then((data) => setJobs(seeAll ? data : data.slice(0, 4)));
-  }, [seeAll, jobs]);
+    setJobs(seeAll ? jobsAvailable : jobsAvailable.slice(0, 4));
+  }, [seeAll])
+
 
   return (
     <div className="my-container">

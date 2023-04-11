@@ -1,9 +1,14 @@
 import React, { useContext } from "react";
-import { JobContext } from "../../App";
+import { JobContext, JobDetailContext } from "../../App";
 import { Link } from "react-router-dom";
 
 
 const Job = ({ job }) => {
+
+  const {handleViewDetails} = useContext(JobDetailContext);
+  
+
+  
   // console.log(job);
 
   const {id, logo, title, company, jobType, location, schedule, salary } = job;
@@ -67,7 +72,7 @@ const Job = ({ job }) => {
           
         </span>
       </div>
-      <Link to={`/details/${job.id}`} className="btn-secondary ">View Details</Link>
+      <Link to={`/details/${job.id}`} > <button onClick={()=>handleViewDetails(job.id)} className="btn-secondary ">View Details</button></Link>
     </div>
   );
 };

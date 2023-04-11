@@ -5,7 +5,7 @@ import { JobContext } from "../../App";
 const Jobs = () => {
   const [jobs, setJobs] = useState([]);
   const [seeAll, setSeeAll] = useState(false);
-  const {AllJobs} = useContext(JobContext );
+  const {AllJobs} = useContext(JobContext || [] );
   const jobsAvailable = (AllJobs || []);
   // console.log(jobs)
 

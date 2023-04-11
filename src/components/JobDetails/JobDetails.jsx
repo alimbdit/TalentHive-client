@@ -1,18 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
-import { JobContext } from '../../App';
+
 import Details from '../Details/Details';
+import { getJobDetails } from '../../utils/fakeDB';
+import { JobContext } from '../../App';
 
 const JobDetails = () => {
 
-    const {AllJobs, jobId} = useContext(JobContext);
-    const jobDetail = AllJobs[4]
-    console.log(jobDetail)
+    const {AllJobs} = useContext(JobContext);
+    
+    
+    const jobId = getJobDetails()
+    const jobDetail = AllJobs.find(singleJob => singleJob.id === jobId)
+    console.log(jobId, jobDetail)
+
 
     return (
         <div>
             <Banner>Job Details</Banner>
-            <Details jobDetail={jobDetail}></Details>
+            <Details jobDetail={jobDetail} ></Details>
 
         </div>
     );

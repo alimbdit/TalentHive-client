@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from 'react';
 import { MapPinIcon, CalendarDaysIcon, CurrencyDollarIcon, PhoneIcon, EnvelopeIcon, } from "@heroicons/react/24/outline";
+import { AppliedJobContext,} from '../../App';
 
-const Details = ({ jobDetail }) => {
+import { toast } from 'react-hot-toast';
+import { addToDb } from '../../utils/fakeDB';
+
+
+const Details = ({jobDetail}) => {
+
+    const [appliedJob, setAppliedJob] = useContext(AppliedJobContext || []);
+
+    
+  console.log(jobDetail)
+
+
+    const handleApply = job => {
+        let newJob = [];
+        const exists = appliedJob.find(
+          existingJob => existingJob.id === job.id
+        )
+        if (!exists) {
+            newJob = [...appliedJob, job];
+            toast.success('Apply Successful! 👍', { autoClose: 500 })
+          alert('added')
+          
+        addToDb(job.id)
+        setAppliedJob(newJob)
+        } else {
+            toast.success('You have applied already! 🔥', { autoClose: 500 })
+            alert("already")
+        }  
+      }
+
   const {
     id,
     company,
@@ -16,6 +46,7 @@ const Details = ({ jobDetail }) => {
     experience,
     contact,
   } = jobDetail;
+  
 
   return (
     <div className="my-container flex flex-col lg:flex-row gap-5">
@@ -65,13 +96,13 @@ const Details = ({ jobDetail }) => {
             <span className="text-info flex gap-2 mb-3">
               <PhoneIcon className="h-6 w-6 text-neutral" />
               <p className="text-xl font-bold text-gray">
-              Phone : <span className="text-info">{contact.phone}</span>
+              Phone : <span className="text-info">{contact?.phone }</span>
               </p>
             </span>
             <span className="text-info flex gap-2 mb-3">
               <EnvelopeIcon className="h-6 w-6 text-neutral" />
               <p className="text-xl font-bold text-gray">
-              Email : <span className="text-info">{contact.email}</span>
+              Email : <span className="text-info">{contact?.email}</span>
               </p>
             </span>
             <span className="text-info flex gap-2 max-w-">
@@ -83,7 +114,7 @@ const Details = ({ jobDetail }) => {
           </div>
         </div>
         <div className="pr-2 mt-auto">
-          <button className="btn-primary w-full ">Apply Now</button>
+          <button onClick={() => handleApply(jobDetail)} className="btn-primary w-full ">Apply Now</button>
         </div>
       </div>
     </div>

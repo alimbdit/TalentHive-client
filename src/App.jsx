@@ -1,5 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 
+import { toast } from 'react-hot-toast'
+
 import "./App.css";
 import Header from "./components/Header/Header";
 import { Outlet, useLoaderData } from "react-router-dom";
@@ -35,10 +37,13 @@ function App() {
     <JobContext.Provider value={{AllJobs}}>
       <AppliedJobContext.Provider value={[appliedJob, setAppliedJob]}>
       <JobDetailContext.Provider value={{}}>
+      
+      
       <div className="App font">
         <Header></Header>
         <Outlet></Outlet>
       </div>
+    
       </JobDetailContext.Provider>
       </AppliedJobContext.Provider>
     </JobContext.Provider>

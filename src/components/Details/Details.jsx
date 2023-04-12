@@ -22,13 +22,10 @@ const Details = ({jobDetail}) => {
         if (!exists) {
             newJob = [...appliedJob, job];
             toast.success('Apply Successful! 👍', { autoClose: 500 })
-          alert('added')
-          
         addToDb(job.id)
         setAppliedJob(newJob)
         } else {
-            toast.success('You have applied already! 🔥', { autoClose: 500 })
-            alert("already")
+            toast.error('You have applied already! 🔥', { autoClose: 500 })
         }  
       }
 

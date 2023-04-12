@@ -5,6 +5,7 @@ import CategoryList from '../CategoryList/CategoryList';
 import Jobs from '../Jobs/Jobs';
 
 const Home = () => {
+    
     return (
         <div>
             <HomeBanner></HomeBanner>

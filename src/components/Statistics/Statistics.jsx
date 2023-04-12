@@ -2,7 +2,9 @@ import React, { PureComponent } from "react";
 import { useLoaderData } from "react-router-dom";
 import "./Statistics.css";
 import {
+  ResponsiveContainer,
   Radar,
+  Tooltip,
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
@@ -10,25 +12,29 @@ import {
 } from "recharts";
 import Banner from "../Banner/Banner";
 
+
 const Statistics = () => {
   const data = useLoaderData();
-  console.log(data);
 
+  
+  // 
   return (
     <div className="">
       <Banner>RadarChart of Assignment Marks</Banner>
-      <div className="chart-container">
+      <div className="my-10 flex w-full h-full justify-center items-center">
+      <ResponsiveContainer width="80%" height="50%" outerRadius="20%" aspect={5 / 2} >
         <RadarChart
           cx="50%"
           cy="50%"
-          outerRadius={100}
-          width={500}
-          height={500}
+          // outerRadius={100}
+          // width={500}
+          // height={500}
           data={data}
         >
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
           <PolarRadiusAxis />
+          <Tooltip />
           <Radar
             name="Abdul Alim"
             dataKey="A"
@@ -37,6 +43,7 @@ const Statistics = () => {
             fillOpacity={0.6}
           />
         </RadarChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );
@@ -44,19 +51,4 @@ const Statistics = () => {
 
 export default Statistics;
 
-// export default class Example extends PureComponent {
-//     static demoUrl = 'https://codesandbox.io/s/simple-radar-chart-rjoc6';
 
-//     render() {
-//       return (
-//         <ResponsiveContainer width="100%" height="100%">
-//           <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
-//             <PolarGrid />
-//             <PolarAngleAxis dataKey="subject" />
-//             <PolarRadiusAxis />
-//             <Radar name="Mike" dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-//           </RadarChart>
-//         </ResponsiveContainer>
-//       );
-//     }
-//   }

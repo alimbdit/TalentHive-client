@@ -1,23 +1,11 @@
-import React, { useContext } from "react";
-import { JobContext, JobDetailContext } from "../../App";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
 
-
 const Job = ({ job }) => {
+  const navigate = useNavigate();
 
-  // const {handleViewDetails} = useContext(JobDetailContext);
-   
-  const navigate = useNavigate()
-  
-
-  
-  // console.log(job);
-
-  const {id, logo, title, company, jobType, location, schedule, salary } = job;
-
-  //  const {handleViewDetails} = useContext(JobContext);
-  
+  const { id, logo, title, company, jobType, location, schedule, salary } = job;
 
   return (
     <div className="rounded-lg border-[#E8E8E8] border shadow p-10">
@@ -30,22 +18,25 @@ const Job = ({ job }) => {
       </div>
       <div className="flex flex-col lg:flex-row gap-2 lg:gap-6 mb-5">
         <span className="text-info flex gap-2">
-          
-        <MapPinIcon className="h-6 w-6 " />
-          
+          <MapPinIcon className="h-6 w-6 " />
+
           <p className="text-xl font-semibold">{location}</p>
         </span>
 
         <span className="text-info flex gap-2 ">
-          
-        <CurrencyDollarIcon className="h-6 w-6" />
-         
-            <p className="text-xl font-semibold">Salary: {salary}</p>
-          
+          <CurrencyDollarIcon className="h-6 w-6" />
+
+          <p className="text-xl font-semibold">Salary: {salary}</p>
         </span>
       </div>
-       <button onClick={()=>navigate(`/details/${job.id}`)} className="btn-secondary ">View Details</button>
-      {/* <Link to={`/details/${job.id}`} > <button onClick={()=>handleViewDetails(job.id)} className="btn-secondary ">View Details</button></Link> */}
+      <div className="text-center lg:text-left">
+      <button
+        onClick={() => navigate(`/job/${job.id}`)}
+        className="btn-secondary "
+      >
+        View Details
+      </button>
+      </div>
     </div>
   );
 };

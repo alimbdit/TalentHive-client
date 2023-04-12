@@ -2,11 +2,16 @@ import React, { useContext, useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
 
 import Details from '../Details/Details';
-import { getJobDetails } from '../../utils/fakeDB';
+// import { getJobDetails } from '../../utils/fakeDB';
 import { JobContext } from '../../App';
-import { useParams } from 'react-router-dom';
+import { useNavigation, useParams } from 'react-router-dom';
+
 
 const JobDetails = () => {
+
+
+
+    const [ jobDetail, setJobDetail] = useState({});
 
     const {AllJobs} = useContext(JobContext);
 
@@ -14,8 +19,15 @@ const JobDetails = () => {
     
     
     // const jobId = getJobDetails()
-    const jobDetail = AllJobs.find(singleJob => singleJob.id === jobId)
-    console.log(jobId, jobDetail)
+    // const jobDetail = AllJobs.find(singleJob => singleJob.id === jobId)
+    
+    useEffect(() => {
+        if(AllJobs){
+            const job = AllJobs.find(singleJob => singleJob.id === jobId)
+            setJobDetail(job)
+        }
+    },[jobId])
+    
 
 
     return (

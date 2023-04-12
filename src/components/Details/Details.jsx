@@ -11,21 +11,21 @@ const Details = ({jobDetail}) => {
     const [appliedJob, setAppliedJob] = useContext(AppliedJobContext || []);
 
     
-  console.log(jobDetail)
+  // console.log(jobDetail)
 
 
     const handleApply = job => {
         let newJob = [];
         const exists = appliedJob.find(
           existingJob => existingJob.id === job.id
-        )
+        );
         if (!exists) {
             newJob = [...appliedJob, job];
-            toast.success('Apply Successful! 👍', { autoClose: 500 })
-        addToDb(job.id)
-        setAppliedJob(newJob)
+            toast.success('Apply Successful! 👍', { autoClose: 100 });
+        addToDb(job.id);
+        setAppliedJob(newJob);
         } else {
-            toast.error('You have applied already! 🔥', { autoClose: 500 })
+            toast.error('You have applied already! 🔥', { autoClose: 100 });
         }  
       }
 
@@ -46,7 +46,7 @@ const Details = ({jobDetail}) => {
   
 
   return (
-    <div className="my-container flex flex-col lg:flex-row gap-5">
+    <div className="my-container flex flex-col lg:flex-row gap-5 items-center">
       <div className="w-full lg:w-2/3">
         <p className="text-info mb-6">
           <span className="font-bold text-title">Job Description: </span>

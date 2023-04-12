@@ -4,9 +4,11 @@ import Banner from "../Banner/Banner";
 import SingleAppliedJob from "../SingleAppliedJob/SingleAppliedJob";
 
 const AppliedJobs = () => {
+
+
   const [appliedJob, setAppliedJob] = useContext(AppliedJobContext || []);
   const [allAppliedJob, setAllAppliedJob] = useState(appliedJob)
-  console.log(appliedJob, "applied");
+  // console.log(appliedJob, "applied");
 
   const handleRemote = () => {
     const remoteJobs = appliedJob.filter(applied => applied.jobType === "Remote")
@@ -29,6 +31,9 @@ const AppliedJobs = () => {
             tabIndex={0}
             className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
           >
+            <li>
+              <button onClick={() => setAllAppliedJob(appliedJob)} className="text-gray font-bold">All</button>
+            </li>
             <li>
               <button onClick={handleRemote} className="text-gray font-bold">Remote</button>
             </li>

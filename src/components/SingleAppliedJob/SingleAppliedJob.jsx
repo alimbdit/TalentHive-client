@@ -8,9 +8,9 @@ const SingleAppliedJob = ({ singleAppliedJob }) => {
 
   const { id, logo, title, company, jobType, location, schedule, salary } =
     singleAppliedJob;
-  console.log(singleAppliedJob);
+  
   return (
-    <div className="rounded-lg border-[#E8E8E8] border shadow p-7 flex items-center gap-8">
+    <div className="rounded-lg border-[#E8E8E8] border shadow p-7 flex flex-col lg:flex-row items-center gap-8">
       <div className="w-60 h-60 bg-[#F4F4F4] rounded-lg flex">
         <img className=" m-auto px-5" src={logo} alt="" />
       </div>
@@ -35,8 +35,8 @@ const SingleAppliedJob = ({ singleAppliedJob }) => {
           </span>
         </div>
       </div>
-      <div className="ml-auto mr-5">
-      <button onClick={() => navigate(`/details/${singleAppliedJob.id}`)} className="btn-secondary ">View Details</button>
+      <div className="mx-auto lg:ml-auto lg:mr-5">
+      <button onClick={() => navigate(`/job/${singleAppliedJob.id}`)} className="btn-secondary ">View Details</button>
       </div>
     </div>
   );

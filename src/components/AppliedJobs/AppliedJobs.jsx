@@ -23,7 +23,7 @@ const AppliedJobs = () => {
     <div>
       <Banner>Applied Jobs</Banner>
       {
-      appliedJob.length && <div className="flex justify-end pt-10 px-4 py-5 lg:pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      appliedJob.length ? (<div className="flex justify-end pt-10 px-4 py-5 lg:pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
          <div className="dropdown dropdown-end ">
           <label tabIndex={0} className="btn-outline m-1">
             Filter By
@@ -43,7 +43,7 @@ const AppliedJobs = () => {
             </li>
           </ul>
         </div>   
-      </div>
+      </div>) : ""
       }
 
       <div className="my-container space-y-6">

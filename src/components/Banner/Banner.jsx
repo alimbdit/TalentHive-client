@@ -17,3 +17,4 @@ const Banner = ({ children }) => {
 };
 
 export default Banner;
+

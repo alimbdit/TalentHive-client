@@ -12,7 +12,7 @@ export const JobDetailContext = createContext([]);
 function App() {
   const { AllJobs, initialJobs } = useLoaderData();
   const [jobId, setJobId] = useState('');
-  const [detailJob, setDetailJob] = useState({})
+  // const [detailJob, setDetailJob] = useState({})
   const [appliedJob, setAppliedJob] = useState(initialJobs);
 
   const handleApply = (id) => {
@@ -20,21 +20,21 @@ function App() {
     setAppliedJob([...appliedJob, id]);
   };
 
-  useEffect(() => {
-    const jobDetailsData = getJobDetails();
-    setDetailJob(jobDetailsData);
-  }, []);
+  // useEffect(() => {
+  //   const jobDetailsData = getJobDetails();
+  //   setDetailJob(jobDetailsData);
+  // }, []);
 
-  const handleViewDetails = (id) => {
-      addDetails(id)
-      // setJobId(id)
-      setDetailJob(id)
-  }
+  // const handleViewDetails = (id) => {
+  //     addDetails(id)
+  //     // setJobId(id)
+  //     // setDetailJob(id)
+  // }
 
   return (
     <JobContext.Provider value={{AllJobs}}>
       <AppliedJobContext.Provider value={[appliedJob, setAppliedJob]}>
-      <JobDetailContext.Provider value={{handleViewDetails}}>
+      <JobDetailContext.Provider value={{}}>
       <div className="App font">
         <Header></Header>
         <Outlet></Outlet>
